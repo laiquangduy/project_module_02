@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="show()">
+    <div>
+      <div class="header">
+        <img src="./img/bet77.gif" alt="" />
+        <div class="header-menu">
+          <i class="fa-solid fa-futbol"></i><span>Thể Thao</span>
+        </div>
+        <div class="header-menu">
+          <img
+            src="./img/icon-live-casino.svg"
+            alt=""
+            style="margin-right: 5px"
+          /><span>Live Casino</span>
+        </div>
+        <div class="header-menu">
+          <i class="fa-solid fa-coins"></i><span>Game Bài</span>
+        </div>
+        <div class="header-menu">
+          <i class="fa-brands fa-google-play"></i><span>Cổng Games</span>
+        </div>
+        <div class="header-menu">
+          <i class="fa-solid fa-dice"></i><span>Games Nhanh</span>
+        </div>
+        <div class="header-menu">
+          <i class="fa-regular fa-calendar"></i><span>Sự Kiện</span>
+        </div>
+        <div class="user-login-block">
+          <div class="header-login"><span>Đăng nhập</span></div>
+          <div class="header-signup"><span>Đăng ký</span></div>
+        </div>
+      </div>
+      <div class="header-noti">
+        <div class="duy-icon-notification">
+          <i class="fa-solid fa-bullhorn"></i>
+        </div>
+
+        <div class="notification">
+          <p class="duy-noti-title">
+            Website cá cược bóng đá hàng đầu Việt Nam
+          </p>
+        </div>
+      </div>
+      <div class="duy-homepage">
+        <div class="slide-banner">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img
+                src="https://img.fabet.tv/bet-img/2022/09/24/pc.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                src="https://img.fabet.tv/bet-img/2022/08/13/bong-da-ao-pc.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                src="https://img.fabet.tv/bet-img/2022/08/27/dctbd-pc.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <br />
+            <div style="text-align: center" class="dot-container">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="duy-registerform">
+            <h3>ĐĂNG KÝ CỰC NHANH</h3>
+            <p>Cược ngay chỉ với 30 giây</p>
+            <input type="text" placeholder="Tên đăng nhập" />
+            <input type="password" placeholder="Mật khẩu" />
+            <input type="text" placeholder="Số điện thoại" />
+            <button>Đăng ký</button>
+          </div>
+        </div>
+        <div class="title-hotmatch">TOP TRẬN CƯỢC NHIỀU</div>
+        <div class="match-item-container">
+          <div id="duy-leftarrow" onclick="moveRight()">
+            <button class="duy-arrow">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+          </div>
+          <div class="match-item" id="duy-match-item-1">
+            <div class="match-item-league">
+              <p class="duy-title">UEFA NATIONS</p>
+              <p class="duy-subtitle">20 người đã cược</p>
+            </div>
+            <div class="info-match">
+              <div class="info-team">
+                <img
+                  class="flag"
+                  src="https://vectorflags.s3.amazonaws.com/flags/vn-button-01.png"
+                  alt=""
+                />Việt Nam
+              </div>
+              <div class="vs">
+                <p>1:45 25/09</p>
+                <img
+                  src="https://img.fabet.tv/static///assets/images/common/items/hotmatch/sv.svg"
+                  alt=""
+                />
+              </div>
+
+              <div class="info-team">
+                <img
+                  src="https://thumbs.dreamstime.com/b/japan-square-flag-button-social-media-communication-sign-busi-business-icon-129017152.jpg"
+                  alt=""
+                  class="flag"
+                />
+                <p>Nhật Bản</p>
+              </div>
+              <button class="duy-btn-bet">Cược ngay</button>
+            </div>
+          </div>
+          <div class="match-item" id="duy-match-item-2">
+            <div class="match-item-league">
+              <p class="duy-title">UEFA</p>
+              <p class="duy-subtitle">20 người cược</p>
+            </div>
+            <div class="info-match">
+              <div class="info-team">
+                <img
+                  class="flag"
+                  src="https://vectorflags.s3.amazonaws.com/flags/vn-button-01.png"
+                  alt=""
+                />Việt Nam
+              </div>
+              <div class="vs">
+                <p>1:45 26/09</p>
+                <img
+                  src="https://img.fabet.tv/static///assets/images/common/items/hotmatch/sv.svg"
+                  alt=""
+                />
+              </div>
+              <div class="info-team">
+                <img
+                  src="https://vectorflags.s3.amazonaws.com/flags/kr-square-01.png"
+                  alt=""
+                  class="flag"
+                />Hàn Quốc
+              </div>
+            </div>
+            <button class="duy-btn-bet">Cược ngay</button>
+          </div>
+          <div class="match-item" id="duy-match-item-3">
+            <div class="match-item-league">
+              <p class="duy-title">UEFA</p>
+              <p class="duy-subtitle">20 người cược</p>
+            </div>
+            <div class="info-match">
+              <div class="info-team">
+                <img
+                  class="flag"
+                  src="https://yt3.ggpht.com/ytc/AMLnZu_0y0-pF-_SNcglUV5fNhgMyzES1Rxh8U2Cmi9duqo=s800-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+                <p>Tottenham</p>
+              </div>
+              <div class="vs">
+                <p>1:45 27/09</p>
+                <img
+                  src="https://img.fabet.tv/static///assets/images/common/items/hotmatch/sv.svg"
+                  alt=""
+                />
+              </div>
+              <div class="info-team">
+                <img
+                  src="data:image/png;base64,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"
+                  alt=""
+                  class="flag"
+                />
+                <p>Man City</p>
+              </div>
+              <button class="duy-btn-bet">Cược ngay</button>
+            </div>
+          </div>
+          <div class="match-item" id="duy-match-item-4">
+            <div class="match-item-league">
+              <p class="duy-title">UEFA</p>
+              <p class="duy-subtitle">20 người cược</p>
+            </div>
+            <div class="info-match">
+              <div class="info-team">
+                <img
+                  class="flag"
+                  src="https://vectorflags.s3.amazonaws.com/flags/vn-button-01.png"
+                  alt=""
+                />Việt Nam
+              </div>
+              <div class="vs">
+                <p>1:45 26/09</p>
+                <img
+                  src="https://img.fabet.tv/static///assets/images/common/items/hotmatch/sv.svg"
+                  alt=""
+                />
+              </div>
+              <div class="info-team">
+                <img
+                  src="https://vectorflags.s3.amazonaws.com/flags/kr-square-01.png"
+                  alt=""
+                  class="flag"
+                />Russia
+              </div>
+            </div>
+            <button class="duy-btn-bet">Cược ngay</button>
+          </div>
+          <div class="match-item" id="duy-match-item-5">
+            <div class="match-item-league">
+              <p class="duy-title">UEFA</p>
+              <p class="duy-subtitle">20 người cược</p>
+            </div>
+            <div class="info-match">
+              <div class="info-team">
+                <img
+                  class="flag"
+                  src="https://vectorflags.s3.amazonaws.com/flags/vn-button-01.png"
+                  alt=""
+                />Việt Nam
+              </div>
+              <div class="vs">
+                <p>1:45 26/09</p>
+                <img
+                  src="https://img.fabet.tv/static///assets/images/common/items/hotmatch/sv.svg"
+                  alt=""
+                />
+              </div>
+              <div class="info-team">
+                <img
+                  src="https://vectorflags.s3.amazonaws.com/flags/kr-square-01.png"
+                  alt=""
+                  class="flag"
+                />England
+              </div>
+            </div>
+            <button class="duy-btn-bet">Cược ngay</button>
+          </div>
+          <div class="match-item" id="duy-match-item-6">
+            <div class="match-item-league">
+              <p class="duy-title">UEFA</p>
+              <p class="duy-subtitle">20 người cược</p>
+            </div>
+            <div class="info-match">
+              <div class="info-team">
+                <img
+                  class="flag"
+                  src="https://vectorflags.s3.amazonaws.com/flags/vn-button-01.png"
+                  alt=""
+                />Việt Nam
+              </div>
+              <div class="vs">
+                <p>1:45 26/09</p>
+                <img
+                  src="https://img.fabet.tv/static///assets/images/common/items/hotmatch/sv.svg"
+                  alt=""
+                />
+              </div>
+              <div class="info-team">
+                <img
+                  src="https://vectorflags.s3.amazonaws.com/flags/kr-square-01.png"
+                  alt=""
+                  class="flag"
+                />USA
+              </div>
+            </div>
+            <button class="duy-btn-bet">Cược ngay</button>
+          </div>
+          <div id="duy-righttarrow" onclick="moveLeft()">
+            <button class="duy-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="duy-footer">
+        <div class="duy-footer-wrapper">
+          <div class="duy-bank">
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/monipay.png"
+              alt=""
+            />
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/acbbank.png"
+              alt=""
+            />
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/techcombank.png"
+              alt=""
+            />
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/vietcombank.png"
+              alt=""
+            />
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/sacombank.png"
+              alt=""
+            />
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/dongabank.png"
+              alt=""
+            />
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/vietinbank.png"
+              alt=""
+            />
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/eximbank.png"
+              alt=""
+            />
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/bidvbank.png"
+              alt=""
+            />
+            <img
+              src="https://img.fabet.tv/static//assets/images/common/items/bank-item/vpbank.png"
+              alt=""
+            />
+          </div>
+          <ul class="duy-link">
+            <li><a href="">Khuyến mại</a></li>
+            <li><a href="">Ngân hàng</a></li>
+            <li><a href="">Cược hợp pháp</a></li>
+            <li><a href="">Bóng đá 24h</a></li>
+            <li><a href="">Về chúng tôi</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="">Tip Bóng đá</a></li>
+            <li><a href="">Soi kèo bóng đá</a></li>
+            <li><a href="">Nhận định bóng đá</a></li>
+            <li><a href="">Kèo bóng rổ</a></li>
+            <li><a href="">Tỷ lệ kèo</a></li>
+            <li><a href="">Lô đề online</a></li>
+          </ul>
+
+          <div class="duy-social">
+            <p>Theo dõi</p>
+            <ul class="duy-social-icon">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-youtube"></i>
+            </ul>
+            <p class="duy-copyright">Bản quyền bởi DMCH team</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
